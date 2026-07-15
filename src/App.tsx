@@ -1,33 +1,30 @@
-import { Button } from "./components/ui/Button";
-import { Card } from "./components/ui/Card";
-import { Container } from "./components/ui/Container";
+import { Navbar } from "./components/sections/Navbar";
+import { HeroSection } from "./components/sections/HeroSection";
+import { AboutSection } from "./components/sections/AboutSection";
+import { SkillsSection } from "./components/sections/SkillsSection";
+import { ProjectsSection } from "./components/sections/ProjectsSection";
+import { ExperienceSection } from "./components/sections/ExperienceSection";
+import { CertificatesSection } from "./components/sections/CertificatesSection";
+import { ContactSection } from "./components/sections/ContactSection";
+import { Footer } from "./components/sections/Footer";
 
 function App() {
   return (
-    <Container className="py-20 space-y-8">
-      <h1 className="text-5xl font-bold text-white">
-        Project Hokage 🚀
-      </h1>
+    <>
+      <Navbar />
 
-      <Card>
-        <h2 className="text-2xl font-semibold text-white">
-          RAGForge
-        </h2>
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <CertificatesSection />
+        <ContactSection />
+      </main>
 
-        <p className="mt-3 text-zinc-400">
-          Enterprise AI Knowledge Engine built with
-          FastAPI, PostgreSQL, Redis and Qdrant.
-        </p>
-
-        <div className="mt-6 flex gap-3">
-          <Button>Live Demo</Button>
-
-          <Button variant="outline">
-            GitHub
-          </Button>
-        </div>
-      </Card>
-    </Container>
+      <Footer />
+    </>
   );
 }
 
