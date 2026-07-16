@@ -6,7 +6,7 @@ A modern, production-ready engineering portfolio built to showcase backend engin
 
 ## 🌐 Live Website
 
-> Coming Soon (Vercel)
+> https://engineering-portfolio-liard.vercel.app
 
 ---
 
