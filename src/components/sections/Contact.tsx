@@ -7,7 +7,7 @@ import { Button } from "../ui/Button";
 import { Section } from "../ui/Section";
 import { SectionHeading } from "../ui/SectionHeading";
 
-export default function ContactSection() {
+export default function Contact() {
   return (
     <Section id="contact">
       <SectionHeading

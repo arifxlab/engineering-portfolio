@@ -7,12 +7,15 @@ import { MobileMenu } from "./MobileMenu";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-800/60 bg-zinc-950/80 backdrop-blur-xl">
+    <header
+      role="banner"
+      className="sticky top-0 z-50 border-b border-zinc-800/60 bg-zinc-950/80 backdrop-blur-xl"
+    >
       <Container className="flex h-16 items-center justify-between">
         <a
           href="#hero"
-          className="text-xl font-bold tracking-tight text-cyan-400 transition hover:text-cyan-300"
           aria-label="Go to Hero section"
+          className="text-xl font-bold tracking-tight text-cyan-400 transition-colors duration-200 hover:text-cyan-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
         >
           AK
         </a>
@@ -25,7 +28,7 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-zinc-300 transition-colors duration-200 hover:text-cyan-400"
+              className="text-sm font-medium text-zinc-300 transition-colors duration-200 hover:text-cyan-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
             >
               {item.label}
             </a>
@@ -38,7 +41,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
-            className="text-zinc-400 transition-colors duration-200 hover:text-white"
+            className="text-zinc-400 transition-colors duration-200 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
           >
             <FaGithub size={20} />
           </a>
@@ -48,7 +51,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
-            className="text-zinc-400 transition-colors duration-200 hover:text-cyan-400"
+            className="text-zinc-400 transition-colors duration-200 hover:text-cyan-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
           >
             <FaLinkedin size={20} />
           </a>

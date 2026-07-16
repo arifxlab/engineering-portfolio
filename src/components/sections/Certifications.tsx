@@ -1,21 +1,17 @@
-import { Container } from "../ui/Container";
-import { Card } from "../ui/Card";
-import { certificates } from "../../data/certificates";
+import { Section } from "../ui/Section";
+import { SectionHeading } from "../ui/SectionHeading";
 
-export function CertificatesSection() {
+import { CertificationGrid } from "../certifications/CertificationGrid";
+
+export default function Certifications() {
   return (
-    <section id="certificates" className="py-24">
-      <Container>
-        <h2 className="text-4xl font-bold text-white">Certificates</h2>
+    <Section id="certifications">
+      <SectionHeading
+        title="Certifications"
+        subtitle="Continuous learning through industry-recognized programs in software engineering, artificial intelligence, cloud technologies, and enterprise development."
+      />
 
-        <div className="mt-10 grid gap-4">
-          {certificates.map((certificate) => (
-            <Card key={certificate}>
-              <p className="text-white">{certificate}</p>
-            </Card>
-          ))}
-        </div>
-      </Container>
-    </section>
+      <CertificationGrid />
+    </Section>
   );
 }

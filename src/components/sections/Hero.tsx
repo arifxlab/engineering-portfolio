@@ -18,7 +18,7 @@ const techStack = [
   "AI / RAG",
 ];
 
-export function HeroSection() {
+export default function Hero() {
   return (
     <section
       id="hero"

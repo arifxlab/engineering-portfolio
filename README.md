@@ -1,75 +1,173 @@
-# React + TypeScript + Vite
+# Project Hokage 🥷
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, production-ready engineering portfolio built to showcase backend engineering, artificial intelligence, and enterprise software projects.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Website
 
-## React Compiler
+> Coming Soon (Vercel)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📖 Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Project Hokage is my personal engineering portfolio designed to present my work, technical skills, and software engineering journey through a clean, responsive, and modern web experience.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The portfolio focuses on production-quality frontend engineering while highlighting backend systems, AI-powered applications, enterprise software, and real-world engineering projects.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✨ Features
 
+- Modern responsive UI
+- Engineering Journey timeline
+- Featured Projects
+- Skills overview
+- Technology Stack
+- Professional Experience
+- Certifications
+- Resume download
+- Contact section
+- Smooth navigation
+- Reusable component architecture
+- SEO-ready metadata
+- Accessible semantic HTML
+- Production-ready folder structure
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+### UI
+
+- Lucide React
+- React Icons
+
+### Tooling
+
+- ESLint
+- Prettier
+
+---
+
+## 📁 Project Structure
+
+```text
+src
+├── components
+│   ├── certifications
+│   ├── experience
+│   ├── journey
+│   ├── sections
+│   ├── skills
+│   ├── stack
+│   └── ui
+├── constants
+├── data
+├── domain
+├── layouts
+├── lib
+├── pages
+└── styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Featured Projects
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- RAGForge
+- Dev Assistant AI
+- AquaGrid
+- CarpeFlow CRM
 
+---
+
+## 💻 Local Development
+
+Clone the repository
+
+```bash
+git clone https://github.com/arifxlab/engineering-portfolio.git
 ```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Production build
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📸 Screenshots
+
+Coming Soon
+
+---
+
+## 📄 Resume
+
+The latest version of my resume is available directly from the portfolio.
+
+---
+
+## 📚 Future Improvements
+
+- Blog
+- Dark / Light Theme
+- Project filtering
+- Case study pages
+- Analytics dashboard
+- Internationalization (i18n)
+
+---
+
+## 📬 Contact
+
+**Arif Khan**
+
+Backend AI Engineer
+
+GitHub
+
+https://github.com/arifxlab
+
+LinkedIn
+
+https://www.linkedin.com/in/arif-khan-086a5a405/
+
+Email
+
+arifxlab@gmail.com
+
+---
+
+## 📜 License
+
+This project is released under the MIT License.
