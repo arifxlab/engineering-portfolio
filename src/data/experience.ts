@@ -1,23 +1,47 @@
-export const experience = [
+import type { Experience } from "../domain/experience";
+
+export const experience: Experience[] = [
   {
+    id: "flyrank",
     company: "FlyRank",
-
     role: "Backend AI Engineering Intern",
-
-    period: "2026 - Present",
-
+    period: "2026",
     description:
-      "Building production-ready backend AI services, enterprise APIs, authentication systems, AI integrations, Dockerized applications, and scalable backend architectures.",
+      "Working on backend engineering projects focused on AI-powered applications, scalable APIs, authentication systems, Docker workflows, and production-oriented software development.",
+    responsibilities: [
+      "Building backend services with modern API architectures",
+      "Developing AI service integrations and intelligent workflows",
+      "Applying clean architecture and engineering best practices",
+      "Working with databases, containers, and deployment workflows",
+    ],
+    technologies: [
+      "FastAPI",
+      "Python",
+      "Docker",
+      "AI APIs",
+      "PostgreSQL",
+      "REST APIs",
+    ],
   },
-
   {
+    id: "carpediem",
     company: "Carpe Diem",
-
     role: "Automation CRM Engineer",
-
-    period: "2026 - Present",
-
+    period: "2026",
     description:
-      "Designing and developing CRM automation solutions and backend business systems focused on productivity and workflow optimization.",
+      "Developing automation-focused CRM solutions to improve business workflows, customer management, and operational efficiency.",
+    responsibilities: [
+      "Designing CRM backend workflows",
+      "Building business automation features",
+      "Developing scalable application architecture",
+      "Improving data management processes",
+    ],
+    technologies: [
+      "Laravel",
+      "PHP",
+      "PostgreSQL",
+      "Docker",
+      "REST APIs",
+    ],
   },
 ];

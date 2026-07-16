@@ -7,21 +7,25 @@ import { MobileMenu } from "./MobileMenu";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-zinc-800/60 bg-zinc-950/80 backdrop-blur-xl">
       <Container className="flex h-16 items-center justify-between">
         <a
           href="#hero"
-          className="text-xl font-bold tracking-tight text-cyan-400"
+          className="text-xl font-bold tracking-tight text-cyan-400 transition hover:text-cyan-300"
+          aria-label="Go to Hero section"
         >
           AK
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav
+          aria-label="Primary navigation"
+          className="hidden items-center gap-8 md:flex"
+        >
           {navigation.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-zinc-300 transition hover:text-cyan-400"
+              className="text-sm font-medium text-zinc-300 transition-colors duration-200 hover:text-cyan-400"
             >
               {item.label}
             </a>
@@ -33,8 +37,8 @@ export function Navbar() {
             href={social.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-zinc-400 transition hover:text-white"
-            aria-label="GitHub"
+            aria-label="GitHub Profile"
+            className="text-zinc-400 transition-colors duration-200 hover:text-white"
           >
             <FaGithub size={20} />
           </a>
@@ -43,8 +47,8 @@ export function Navbar() {
             href={social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-zinc-400 transition hover:text-cyan-400"
-            aria-label="LinkedIn"
+            aria-label="LinkedIn Profile"
+            className="text-zinc-400 transition-colors duration-200 hover:text-cyan-400"
           >
             <FaLinkedin size={20} />
           </a>

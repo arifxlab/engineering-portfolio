@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --background: #09090b;
+  --surface: #18181b;
+  --surface-elevated: #27272a;
+
+  --border: #3f3f46;
+
+  --primary: #06b6d4;
+  --primary-hover: #0891b2;
+
+  --text: #fafafa;
+  --text-muted: #a1a1aa;
+  --text-soft: #71717a;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+
+  /* Shadow */
+  --shadow-card: 0 12px 32px rgba(0,0,0,.35);
+
+  /* Width */
+  --container: 1280px;
+}
